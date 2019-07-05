@@ -1,0 +1,94 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<link href="~/Style/DetilPelamarPopup.css" rel="stylesheet" type="text/css" />
+<link href="~/Style/NavbarPopup.css" rel="stylesheet" type="text/css" />
+
+<h2>Home</h2>
+
+
+<div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="ddUser">
+        Hi, <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+        <li><a href="#">Setting</a></li>
+        <li><a href="#" id="logout">Logout</a></li>
+    </ul>
+</div>
+
+<button id="log" data-toggle="modal" data-target="#myModal">POPUP</button>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog cntr-popup" role="document">
+        <div class="modal-content bgr-popup">
+            <div class="modal-header hdr-popup cntr-hdr">
+                <h4 class="modal-title">Detil Pelamar</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span class="glyphicon glyphicon-remove btn-exit" aria-hidden="true"></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-3 ">
+                        <div class="vertical-menu">
+                            <a href="#" id="vwProfil">Profil</a>
+                            <a href="#" id="vwBiodata">Biodata</a>
+                            <a href="#" id="vwPengalaman">Pengalaman Kerja</a>
+                            <a href="#" id="vwPendidikan">Pendidikan</a>
+                            <a href="#" id="vwPelatihan">Pelatihan</a>
+                            <a href="#" id="vwSertifikasi">Sertifikasi</a>
+                            <a href="#" id="vwSlk">Sumber Lowongan Kerja</a>
+                            <a href="#" id="vwOrganisasi">Organisasi</a>
+                            <a href="#" id="vwKeluarga">Keluarga</a>
+                            <a href="#" id="vwKeahlian">Keahlian</a>
+                            <a href="#" id="vwLain">Lain-Lain</a>
+                            <a href="#" id="vwDokumen">Dokumen</a>
+                            <a href="#" id="vwCatatan">Catatan</a>
+                            <a href="#" id="vwAktifasi">Aktivasi Akun</a>
+                            <a href="#" id="vwLihat">Lihat Test</a>
+                            <a href="#" style="border-bottom-width:1px;" id="vwHasil">Hasil Test</a>
+                        </div>
+                    </div>
+                    <div class="col-md-8" style="margin-left:25px;" id="divRight">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        //var coba = sessionStorage.getItem("UserID")
+        //alert(coba);
+    });
+
+    $('#vwCatatan').click(function () {
+        $.ajax
+        ({
+            url: '/Catatan/Index',
+            method: 'Get',
+            success: function (result) 
+            {
+                debugger;
+                $("#divRight").html(result);
+            },
+            error: function (result) 
+            {
+                debugger;
+            }
+        })
+    });
+
+    $('#logout').click(function () {
+        sessionStorage.clear()
+        alert(sessionStorage.getItem("UserID"))
+        var url = "@Url.Action("Index","Login")"
+        window.location.href = url;
+    });
+
+</script>
+

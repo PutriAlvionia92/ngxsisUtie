@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ngxsis.Model", "ngxsis.Model\ngxsis.Model.csproj", "{85B8A56E-9432-44FE-B5CD-02DEAC426E9E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ngxsis.ViewModel", "ngxsis.ViewModel\ngxsis.ViewModel.csproj", "{6C0B70D3-020B-4060-AD1B-D630EFF5EE26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ngxsis.Repo", "ngxsis.Repo\ngxsis.Repo.csproj", "{20F83E3E-1745-49D4-95AA-E11C4EABA1FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ngxsis.Web", "ngxsis.Web\ngxsis.Web.csproj", "{0365D013-3492-4021-9AF4-433B81791BED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{85B8A56E-9432-44FE-B5CD-02DEAC426E9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85B8A56E-9432-44FE-B5CD-02DEAC426E9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85B8A56E-9432-44FE-B5CD-02DEAC426E9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85B8A56E-9432-44FE-B5CD-02DEAC426E9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C0B70D3-020B-4060-AD1B-D630EFF5EE26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C0B70D3-020B-4060-AD1B-D630EFF5EE26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C0B70D3-020B-4060-AD1B-D630EFF5EE26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C0B70D3-020B-4060-AD1B-D630EFF5EE26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20F83E3E-1745-49D4-95AA-E11C4EABA1FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20F83E3E-1745-49D4-95AA-E11C4EABA1FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20F83E3E-1745-49D4-95AA-E11C4EABA1FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20F83E3E-1745-49D4-95AA-E11C4EABA1FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0365D013-3492-4021-9AF4-433B81791BED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0365D013-3492-4021-9AF4-433B81791BED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0365D013-3492-4021-9AF4-433B81791BED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0365D013-3492-4021-9AF4-433B81791BED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
